@@ -34,7 +34,7 @@ The segmentation workflow identifies candidate molecular objects and produces im
 
 ### Labelled objects and molecule crops
 
-The project uses manually labelled molecular crops to inspect class structure and prepare a classification dataset.
+The example below shows labelled molecular objects from the Ag111_APT_CO_044 dataset, illustrating the class structure and representative molecule crops used during dataset preparation.
 
 ![Labelled objects and class distribution](figures/classification_overview.png)
 
