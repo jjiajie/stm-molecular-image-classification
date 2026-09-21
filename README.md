@@ -42,16 +42,20 @@ The project uses manually labelled molecular crops to inspect class structure an
 
 ## My contribution
 
-My main focus in the current portfolio snapshot is the CNN-based molecule classification workflow. This includes:
+My contribution focused on **molecule segmentation, manual labelling, and CNN-based classification**. This included:
 
-- loading manually labelled molecule crops;
+- comparing segmentation parameters to improve molecule detection and reduce duplicate or unsuitable detections;
+- generating and reviewing molecular image crops from segmented STM images;
+- manually labelling molecular crops to prepare supervised classification data;
 - creating a stratified training/validation split;
-- applying grayscale normalization and random rotation augmentation;
+- applying grayscale normalisation and random rotation augmentation;
 - using class-balanced sampling during training;
 - defining and training a compact CNN in PyTorch; and
 - reviewing training curves, confusion matrices, and rotation robustness.
 
-The notebook currently documents an experiment using 366 manually labelled crops across four classes. These are interim project results rather than a final benchmark, as the project is still ongoing.
+For the Helicene STM image shown above, segmentation parameter refinement produced **366 candidate molecular crops**, which were subsequently reviewed and labelled for classification.
+
+The notebook currently documents an experiment using **366 manually labelled crops across four classes**. These are interim project results rather than a final benchmark, as the project is still ongoing.
 
 ## Notebook
 
@@ -61,4 +65,4 @@ The notebook is included primarily for inspection. Re-running it requires the or
 
 ## Project status
 
-**Ongoing.** Future work may include refining manual labels, comparing segmentation settings more systematically, improving validation design, and evaluating the classifier on additional STM images.
+**Ongoing.** This repository represents the current stage of the project. Future work may include refining manual labels, comparing segmentation settings more systematically, improving the validation design, and evaluating the classifier on additional STM images.
